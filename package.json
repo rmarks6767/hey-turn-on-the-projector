@@ -1,0 +1,30 @@
+{
+    "name": "hey-turn-on-the-projector",
+    "description": "Makes calls to an epson projector so I can control it a lot more easily than they have it set up",
+    "author": {
+        "email": "rmarks6767@gmail.com",
+        "name": "River Marks",
+        "url": "https://github.com/rmarks6767"
+    },
+    "repository": {
+        "url": "https://github.com/rmarks6767/hey-turn-on-the-projector"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "jest --detectOpenHandles"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "jest": "^26.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.4.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.22.0",
+        "supertest": "^4.0.2"
+    }
+}
