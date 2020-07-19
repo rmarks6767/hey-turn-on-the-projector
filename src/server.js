@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 const express = require('express');
 const cors = require('cors');
-const basicAuth = require('express-basic-auth');
 const baseRequest = require('./baseRequest');
 const keys = require('./keys');
 
@@ -10,17 +9,6 @@ const epsonIp = process.argv.find((arg) => new RegExp(/^[0-9]+\.[0-9]+\.[0-9]+\.
 
 app.use(cors());
 app.use(express.json());
-app.use(basicAuth({
-  users: {
-    google: process.env.PROECTOR_PASSWORD || 'password',
-  },
-  challenge: true,
-}));
-
-app.post('/webhook', (req, res) => {
-  console.log(req.body);
-  res.send('Success!').status(200);
-});
 
 app.get('/:command', async (req, res) => {
   const { command } = req.params;
