@@ -10,6 +10,11 @@ const epsonIp = process.argv.find((arg) => new RegExp(/^[0-9]+\.[0-9]+\.[0-9]+\.
 app.use(cors());
 app.use(express.json());
 
+app.post('/webhook', (req, res) => {
+  console.log(req.body);
+  res.send('Success!').status(200);
+});
+
 app.get('/:command', async (req, res) => {
   const { command } = req.params;
   const formattedCommand = String(command).toUpperCase();
