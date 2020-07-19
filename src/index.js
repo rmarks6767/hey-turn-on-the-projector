@@ -2,7 +2,7 @@ const https = require('https');
 const fs = require('fs');
 const app = require('./server');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8443;
 
 try {
   const key = fs.readFileSync(`${__dirname}/certs/selfsigned.key`);
