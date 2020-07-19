@@ -1,5 +1,6 @@
 {
     "name": "hey-turn-on-the-projector",
+    "version": "0.2.0",
     "description": "Makes calls to an epson projector so I can control it a lot more easily than they have it set up",
     "author": {
         "email": "rmarks6767@gmail.com",
@@ -19,7 +20,6 @@
         "axios": "^0.19.2",
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "express-basic-auth": "^1.2.0",
         "jest": "^26.1.0"
     },
     "devDependencies": {
