@@ -14,7 +14,8 @@
     "main": "index.js",
     "scripts": {
         "start": "node src/index.js",
-        "test": "jest --detectOpenHandles"
+        "test": "jest --detectOpenHandles",
+        "tunnel": "ngrok http 3000"
     },
     "dependencies": {
         "axios": "^0.19.2",
@@ -26,6 +27,7 @@
         "eslint": "^7.4.0",
         "eslint-config-airbnb-base": "^14.2.0",
         "eslint-plugin-import": "^2.22.0",
+        "ngrok": "^3.3.0",
         "supertest": "^4.0.2"
     }
 }
